@@ -46,14 +46,21 @@
             InputLabel = new Label();
             EqualsButton = new Button();
             OutputLabel = new Label();
+            button1 = new Button();
+            DeleteButton = new Button();
+            OffButton = new Button();
+            DPointButton = new Button();
+            AnsButton = new Button();
+            LeftBracketButton = new Button();
+            RightButtonBracket = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // OneButton
             // 
-            OneButton.Location = new Point(23, 192);
+            OneButton.Location = new Point(12, 231);
             OneButton.Name = "OneButton";
-            OneButton.Size = new Size(90, 60);
+            OneButton.Size = new Size(80, 50);
             OneButton.TabIndex = 0;
             OneButton.Text = "1";
             OneButton.UseVisualStyleBackColor = true;
@@ -61,9 +68,9 @@
             // 
             // TwoButton
             // 
-            TwoButton.Location = new Point(119, 192);
+            TwoButton.Location = new Point(98, 231);
             TwoButton.Name = "TwoButton";
-            TwoButton.Size = new Size(90, 60);
+            TwoButton.Size = new Size(80, 50);
             TwoButton.TabIndex = 1;
             TwoButton.Text = "2";
             TwoButton.UseVisualStyleBackColor = true;
@@ -71,9 +78,9 @@
             // 
             // ThreeButton
             // 
-            ThreeButton.Location = new Point(215, 192);
+            ThreeButton.Location = new Point(184, 231);
             ThreeButton.Name = "ThreeButton";
-            ThreeButton.Size = new Size(90, 60);
+            ThreeButton.Size = new Size(80, 50);
             ThreeButton.TabIndex = 2;
             ThreeButton.Text = "3";
             ThreeButton.UseVisualStyleBackColor = true;
@@ -81,9 +88,9 @@
             // 
             // button4
             // 
-            button4.Location = new Point(23, 258);
+            button4.Location = new Point(12, 287);
             button4.Name = "button4";
-            button4.Size = new Size(90, 60);
+            button4.Size = new Size(80, 50);
             button4.TabIndex = 3;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
@@ -91,9 +98,9 @@
             // 
             // button5
             // 
-            button5.Location = new Point(119, 258);
+            button5.Location = new Point(98, 287);
             button5.Name = "button5";
-            button5.Size = new Size(90, 60);
+            button5.Size = new Size(80, 50);
             button5.TabIndex = 4;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
@@ -101,9 +108,9 @@
             // 
             // button6
             // 
-            button6.Location = new Point(215, 258);
+            button6.Location = new Point(184, 287);
             button6.Name = "button6";
-            button6.Size = new Size(90, 60);
+            button6.Size = new Size(80, 50);
             button6.TabIndex = 5;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
@@ -111,9 +118,9 @@
             // 
             // button7
             // 
-            button7.Location = new Point(23, 324);
+            button7.Location = new Point(12, 343);
             button7.Name = "button7";
-            button7.Size = new Size(90, 60);
+            button7.Size = new Size(80, 50);
             button7.TabIndex = 6;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = true;
@@ -121,9 +128,9 @@
             // 
             // button8
             // 
-            button8.Location = new Point(119, 324);
+            button8.Location = new Point(98, 343);
             button8.Name = "button8";
-            button8.Size = new Size(90, 60);
+            button8.Size = new Size(80, 50);
             button8.TabIndex = 7;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = true;
@@ -131,9 +138,9 @@
             // 
             // button9
             // 
-            button9.Location = new Point(215, 324);
+            button9.Location = new Point(184, 343);
             button9.Name = "button9";
-            button9.Size = new Size(90, 60);
+            button9.Size = new Size(80, 50);
             button9.TabIndex = 8;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = true;
@@ -141,9 +148,9 @@
             // 
             // button10
             // 
-            button10.Location = new Point(23, 390);
+            button10.Location = new Point(12, 399);
             button10.Name = "button10";
-            button10.Size = new Size(90, 60);
+            button10.Size = new Size(80, 50);
             button10.TabIndex = 9;
             button10.Text = "0";
             button10.UseVisualStyleBackColor = true;
@@ -154,15 +161,15 @@
             pictureBox1.BackColor = SystemColors.ControlDarkDark;
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(405, 90);
+            pictureBox1.Size = new Size(419, 93);
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
             // AddButton
             // 
-            AddButton.Location = new Point(311, 192);
+            AddButton.Location = new Point(270, 287);
             AddButton.Name = "AddButton";
-            AddButton.Size = new Size(90, 60);
+            AddButton.Size = new Size(80, 50);
             AddButton.TabIndex = 12;
             AddButton.Text = "+";
             AddButton.UseVisualStyleBackColor = true;
@@ -170,9 +177,9 @@
             // 
             // SubtractButton
             // 
-            SubtractButton.Location = new Point(311, 258);
+            SubtractButton.Location = new Point(356, 287);
             SubtractButton.Name = "SubtractButton";
-            SubtractButton.Size = new Size(90, 60);
+            SubtractButton.Size = new Size(80, 50);
             SubtractButton.TabIndex = 13;
             SubtractButton.Text = "-";
             SubtractButton.UseVisualStyleBackColor = true;
@@ -180,9 +187,9 @@
             // 
             // MultiplyButton
             // 
-            MultiplyButton.Location = new Point(311, 324);
+            MultiplyButton.Location = new Point(270, 343);
             MultiplyButton.Name = "MultiplyButton";
-            MultiplyButton.Size = new Size(90, 60);
+            MultiplyButton.Size = new Size(80, 50);
             MultiplyButton.TabIndex = 14;
             MultiplyButton.Text = "*";
             MultiplyButton.UseVisualStyleBackColor = true;
@@ -190,9 +197,9 @@
             // 
             // DivideButton
             // 
-            DivideButton.Location = new Point(311, 389);
+            DivideButton.Location = new Point(356, 343);
             DivideButton.Name = "DivideButton";
-            DivideButton.Size = new Size(90, 60);
+            DivideButton.Size = new Size(80, 50);
             DivideButton.TabIndex = 15;
             DivideButton.Text = "/";
             DivideButton.UseVisualStyleBackColor = true;
@@ -204,14 +211,14 @@
             InputLabel.Font = new Font("Trebuchet MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             InputLabel.Location = new Point(12, 12);
             InputLabel.Name = "InputLabel";
-            InputLabel.Size = new Size(405, 30);
+            InputLabel.Size = new Size(419, 29);
             InputLabel.TabIndex = 16;
             // 
             // EqualsButton
             // 
-            EqualsButton.Location = new Point(215, 389);
+            EqualsButton.Location = new Point(356, 399);
             EqualsButton.Name = "EqualsButton";
-            EqualsButton.Size = new Size(90, 60);
+            EqualsButton.Size = new Size(80, 50);
             EqualsButton.TabIndex = 17;
             EqualsButton.Text = "=";
             EqualsButton.UseVisualStyleBackColor = true;
@@ -220,19 +227,92 @@
             // OutputLabel
             // 
             OutputLabel.BackColor = SystemColors.ControlDarkDark;
-            OutputLabel.Location = new Point(12, 71);
+            OutputLabel.Font = new Font("Trebuchet MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            OutputLabel.Location = new Point(12, 76);
             OutputLabel.Name = "OutputLabel";
-            OutputLabel.Size = new Size(405, 31);
+            OutputLabel.Size = new Size(419, 29);
             OutputLabel.TabIndex = 18;
-            OutputLabel.Text = "dkjwad";
             OutputLabel.TextAlign = ContentAlignment.BottomRight;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(184, 399);
+            button1.Name = "button1";
+            button1.Size = new Size(80, 50);
+            button1.TabIndex = 19;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // DeleteButton
+            // 
+            DeleteButton.Location = new Point(270, 231);
+            DeleteButton.Name = "DeleteButton";
+            DeleteButton.Size = new Size(80, 50);
+            DeleteButton.TabIndex = 20;
+            DeleteButton.Text = "DEL";
+            DeleteButton.UseVisualStyleBackColor = true;
+            // 
+            // OffButton
+            // 
+            OffButton.Location = new Point(356, 231);
+            OffButton.Name = "OffButton";
+            OffButton.Size = new Size(80, 50);
+            OffButton.TabIndex = 21;
+            OffButton.Text = "OFF";
+            OffButton.UseVisualStyleBackColor = true;
+            OffButton.Click += OffButton_Click;
+            // 
+            // DPointButton
+            // 
+            DPointButton.Location = new Point(98, 399);
+            DPointButton.Name = "DPointButton";
+            DPointButton.Size = new Size(80, 50);
+            DPointButton.TabIndex = 22;
+            DPointButton.Text = ".";
+            DPointButton.UseVisualStyleBackColor = true;
+            DPointButton.Click += DPointButton_Click;
+            // 
+            // AnsButton
+            // 
+            AnsButton.Location = new Point(270, 399);
+            AnsButton.Name = "AnsButton";
+            AnsButton.Size = new Size(80, 50);
+            AnsButton.TabIndex = 23;
+            AnsButton.Text = "ANS";
+            AnsButton.UseVisualStyleBackColor = true;
+            // 
+            // LeftBracketButton
+            // 
+            LeftBracketButton.Location = new Point(270, 175);
+            LeftBracketButton.Name = "LeftBracketButton";
+            LeftBracketButton.Size = new Size(80, 50);
+            LeftBracketButton.TabIndex = 24;
+            LeftBracketButton.Text = "(";
+            LeftBracketButton.UseVisualStyleBackColor = true;
+            LeftBracketButton.Click += LeftBracketButton_Click;
+            // 
+            // RightButtonBracket
+            // 
+            RightButtonBracket.Location = new Point(356, 175);
+            RightButtonBracket.Name = "RightButtonBracket";
+            RightButtonBracket.Size = new Size(80, 50);
+            RightButtonBracket.TabIndex = 25;
+            RightButtonBracket.Text = ")";
+            RightButtonBracket.UseVisualStyleBackColor = true;
             // 
             // Calculator
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(429, 461);
+            ClientSize = new Size(448, 461);
+            Controls.Add(RightButtonBracket);
+            Controls.Add(LeftBracketButton);
+            Controls.Add(AnsButton);
+            Controls.Add(DPointButton);
+            Controls.Add(OffButton);
+            Controls.Add(DeleteButton);
+            Controls.Add(button1);
             Controls.Add(OutputLabel);
             Controls.Add(EqualsButton);
             Controls.Add(InputLabel);
@@ -277,5 +357,12 @@
         private Label InputLabel;
         private Button EqualsButton;
         private Label OutputLabel;
+        private Button button1;
+        private Button DeleteButton;
+        private Button OffButton;
+        private Button DPointButton;
+        private Button AnsButton;
+        private Button LeftBracketButton;
+        private Button RightButtonBracket;
     }
 }

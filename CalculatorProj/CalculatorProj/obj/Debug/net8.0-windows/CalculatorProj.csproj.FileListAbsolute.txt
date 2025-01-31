@@ -14,3 +14,19 @@ C:\Users\sy246734\OneDrive - Xaverian College\Y12 Computer Science\Visual Studio
 C:\Users\sy246734\OneDrive - Xaverian College\Y12 Computer Science\Visual Studio\C#\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\CalculatorProj.pdb
 C:\Users\sy246734\OneDrive - Xaverian College\Y12 Computer Science\Visual Studio\C#\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\CalculatorProj.genruntimeconfig.cache
 C:\Users\sy246734\OneDrive - Xaverian College\Y12 Computer Science\Visual Studio\C#\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\ref\CalculatorProj.dll
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\bin\Debug\net8.0-windows\CalculatorProj.exe
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\bin\Debug\net8.0-windows\CalculatorProj.deps.json
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\bin\Debug\net8.0-windows\CalculatorProj.runtimeconfig.json
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\bin\Debug\net8.0-windows\CalculatorProj.dll
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\bin\Debug\net8.0-windows\CalculatorProj.pdb
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\CalculatorProj.Calculator.resources
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\CalculatorProj.csproj.GenerateResource.cache
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\CalculatorProj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\CalculatorProj.AssemblyInfoInputs.cache
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\CalculatorProj.AssemblyInfo.cs
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\CalculatorProj.csproj.CoreCompileInputs.cache
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\CalculatorProj.dll
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\refint\CalculatorProj.dll
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\CalculatorProj.pdb
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\CalculatorProj.genruntimeconfig.cache
+C:\Users\manny\source\repos\Projects\CalculatorProj\CalculatorProj\obj\Debug\net8.0-windows\ref\CalculatorProj.dll
