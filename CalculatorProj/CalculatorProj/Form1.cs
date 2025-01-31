@@ -1,31 +1,51 @@
 using System.Data;
-using System.Linq.Expressions;
 
 namespace CalculatorProj
 {
     public partial class Calculator : Form
     {
+        Dictionary<string, double> variables = new Dictionary<string, double>();
 
-        private string Number;
+        private string expression = string.Empty;
         public Calculator()
         {
             InitializeComponent();
             DisplayInput();
         }
 
+        private string ProcessExpression(string expression)
+        {
+            foreach (var variable in variables)
+                expression = expression.Replace(variable.Key, variable.Value.ToString());
+
+            return expression;
+        }
+
+        private void SetVariable(string variableName)
+        {
+            string variableValue = CalculateExpression();
+
+            variables[variableName] = double.Parse(variableValue);
+
+            expression = string.Empty;
+        }
+
         private void DisplayInput()
         {
-            InputLabel.Text = Number;
+            InputLabel.Text = expression;
         }
+
         private void DisplayOutput(string output)
         {
             OutputLabel.Text = output;
         }
-        private void AddToNumber(char item)
+
+        private void AddToExpression(string item)
         {
-            Number += item;
+            expression += item;
             DisplayInput();
         }
+
         static bool ValidateInput(string input)
         {
             if (input != null)
@@ -41,115 +61,172 @@ namespace CalculatorProj
             }
             return false;
         }
+
+        private string CalculateExpression()
+        {
+            string processedExpression = ProcessExpression(expression);
+            object result = new DataTable().Compute(expression, null);
+            return Convert.ToString(result);
+        }
+
         private void OneButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('1');
+            AddToExpression("1");
         }
 
         private void TwoButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('2');
+            AddToExpression("2");
         }
 
         private void ThreeButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('3');
+            AddToExpression("3");
         }
 
         private void FourButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('4');
+            AddToExpression("4");
         }
 
         private void FiveButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('5');
+            AddToExpression("5");
         }
 
         private void SixButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('6');
+            AddToExpression("6");
         }
 
         private void SevenButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('7');
+            AddToExpression("7");
         }
 
         private void EightButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('8');
+            AddToExpression("8");
         }
 
         private void NineButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('9');
+            AddToExpression("9");
         }
 
         private void ZeroButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('0');
+            AddToExpression("0");
         }
+
         private void DPointButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('.');
+            AddToExpression(".");
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('+');
+            AddToExpression("+");
         }
 
         private void SubtractButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('-');
+            AddToExpression("-");
         }
 
         private void MultiplyButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('*');
+            AddToExpression("*");
         }
 
         private void DivideButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('/');
+            AddToExpression("/");
+        }
+
+        private void ModButton_Click(object sender, EventArgs e)
+        {
+            AddToExpression("%");
+        }
+
+        private void ExponentButton_Click(object sender, EventArgs e)
+        {
+            AddToExpression("^");
         }
 
         private void LeftBracketButton_Click(object sender, EventArgs e)
         {
-            AddToNumber('(');
+            AddToExpression("(");
         }
 
         private void RightBracketButton_Click(object sender, EventArgs e)
         {
-            AddToNumber(')');
+            AddToExpression(")");
         }
 
         private void EqualsButton_Click(object sender, EventArgs e)
         {
             try
             {
-                if (ValidateInput(Number))
-                {
-                    object result = new DataTable().Compute(Number, null);
-                    InputLabel.Text = null;
-                    Number = "";
-                    DisplayOutput(Convert.ToString(result));
-                }
+                string result = CalculateExpression();
+                DisplayOutput(result);
+                InputLabel.Text = null;
+                expression = "";
             }
-            catch { Exception ex; }
+            catch { Exception ex; DisplayOutput("ERR"); }
         }
 
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            expression = expression[..^1];
+            DisplayInput();
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            expression = string.Empty;
+            DisplayInput();
+            DisplayOutput(null);
+        }
 
         private void OffButton_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void DeleteButton_Click(object sender, EventArgs e)
+        private void VarA_Button_Click(object sender, EventArgs e)
         {
-            Number = Number[..^1];
-            DisplayInput();
+            if (expression != string.Empty) SetVariable("A");
+            else AddToExpression("A");
+            InputLabel.Text = null;
+        }
+
+        private void VarB_Button_Click(object sender, EventArgs e)
+        {
+            if (expression != string.Empty) SetVariable("B");
+            else AddToExpression("B");
+            InputLabel.Text = null;
+        }
+
+        private void VarC_Button_Click(object sender, EventArgs e)
+        {
+            if (expression != string.Empty) SetVariable("C");
+            else AddToExpression("C");
+            InputLabel.Text = null;
+        }
+
+        private void VarD_Button_Click(object sender, EventArgs e)
+        {
+            if (expression != string.Empty) SetVariable("D");
+            else AddToExpression("D");
+            InputLabel.Text = null;
+        }
+
+        private void VarE_Button_Click(object sender, EventArgs e)
+        {
+            if (expression != string.Empty) SetVariable("E");
+            else AddToExpression("E");
+            InputLabel.Text = null;
         }
     }
 }
