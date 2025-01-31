@@ -136,18 +136,20 @@ namespace CalculatorProj
                     Number = "";
                     DisplayOutput(Convert.ToString(result));
                 }
-            } catch { Exception ex; }
+            }
+            catch { Exception ex; }
         }
 
-        private void DeleteButton_Click(object sender, EventArgs e)
-        {
-            Number = Number.Remove(Number.Length);
-            DisplayInput();
-        }
 
         private void OffButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            Number = Number[..^1];
+            DisplayInput();
         }
     }
 }

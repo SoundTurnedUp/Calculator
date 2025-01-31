@@ -251,6 +251,7 @@
             DeleteButton.TabIndex = 20;
             DeleteButton.Text = "DEL";
             DeleteButton.UseVisualStyleBackColor = true;
+            DeleteButton.Click += DeleteButton_Click;
             // 
             // OffButton
             // 
